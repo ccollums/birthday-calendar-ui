@@ -34,30 +34,33 @@ class Form extends Component {
 	render() {
 		return (
 			<form>
-				<label>Name:</label>
-				<input
-					type='text'
-					placeholder='Name'
-					name='name'
-					value={this.state.name}
-					onChange={event => this.handleChange(event)}
-				/>
-				<label>Month:</label>
-				<input
-					type='text'
-          placeholder='Month'
-          name='month'
-          value={this.state.month}
-					onChange={event => this.handleChange(event)}
-				/>
-				<label>Day:</label>
-				<input
-					type='text'
-          placeholder='Day'
-          name='day'
-          value={this.state.day}
-					onChange={event => this.handleChange(event)}
-				/>
+				<section className='form-name'>
+					<label>Name:</label>
+					<input
+						type='text'
+						name='name'
+						value={this.state.name}
+						onChange={event => this.handleChange(event)}
+					/>
+				</section>
+				<section className='form-month'>
+					<label>Month:</label>
+					<input
+						type='text'
+						name='month'
+						value={this.state.month}
+						onChange={event => this.handleChange(event)}
+					/>
+				</section>
+				<section className='form-day'>
+					<label>Day:</label>
+					<input
+						type='text'
+						name='day'
+						value={this.state.day}
+						onChange={event => this.handleChange(event)}
+					/>
+				</section>
 				<button onClick={event => this.submitBirthday(event)}>Add this Birthday!</button>
 			</form>
 		)

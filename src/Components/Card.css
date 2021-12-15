@@ -3,5 +3,26 @@
 	border-radius: 5px;
 	text-align: center;
 	border: 7px solid black;
-	height: 25vh;
+	height: 29vh;
+	width: 22vw;
+	margin: 2%;
+}
+
+h2 {
+	color:#D077E7
+}
+
+.each-birthday {
+	text-align: left;
+	margin-left: 5%;
+}
+
+.month {
+	margin-bottom: 13%;
+}
+
+.no-birthday {
+	font-size: smaller;
+	font-style: italic;
+	color: lightgrey;
 }
