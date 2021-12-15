@@ -13,6 +13,8 @@ describe('Birthdays Page', () => {
 			.contains('Month')
 			.get('form')
 			.contains('Day')
+			.get('.card')
+			.should('have.length', 12)
 	})
 
 	it('should be able to select name, month, and day inputs and fill them with values', () =>{
@@ -28,6 +30,16 @@ describe('Birthdays Page', () => {
 	})
 
 	it('when a user adds a new birthday it should be added to the page', () =>{
-
+		cy.get('input[name="name"]')
+			.type('Carly')
+			.get('input[name="month"]')
+			.type('4')
+			.get('input[name="day"]')
+			.type('4')
+			.get('button').click()
+			.get('.card')
+			.contains('April')
+			.get('h3')
+			.contains('Carly')
 	})
 })
