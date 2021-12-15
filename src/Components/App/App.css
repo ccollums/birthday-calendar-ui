@@ -25,3 +25,16 @@ h1 {
   width: 30%;
   margin: auto;
 }
+
+.bday-form {
+  background-color: white;
+  border-radius: 5px;
+  border: 7px solid black;
+  padding: 15px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
